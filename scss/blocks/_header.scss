@@ -1,0 +1,41 @@
+.container {
+    @include container;
+}
+header {
+    background-color: #222222;
+}
+.nav {
+    @include navbar;
+}
+.page-header-logo {
+    @include svgbutton;
+}
+.menu-btn {
+    @include svgbutton;
+}
+.account-btn {
+    @include svgbutton;
+}
+.cart-btn {
+    @include svgbutton;
+}
+
+.breadcrumb {
+    height: 75px;
+    background-color: $lightsalmon;
+    .breadcrumb__wrapper {
+        width: 1140px;
+        height: 75px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        
+        .breadcrumb__title {
+            font-family: $font;
+            text-transform: uppercase;
+            color: $salmon;
+            font-weight: 400;
+            
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.footer__bottom {
+    height: 79px;
+    background: $black;
+
+    .footer__bottom-container {
+        width: 1140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0 0 0;
+
+        .footer__bottom-txt {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-family: $font;
+            font-size: 16px;
+            color: $ligthgray;
+        }
+
+        .social_bottom {
+            .social {
+                display: inline-block;
+            }
+
+            .social a {
+                display: block;
+                width: 31.45px;
+                height: 32px;
+                margin: 0 7.29px 0 0;
+                text-align: center;
+                color: #000;
+                background: #fff;
+                border: 0px;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
+
+
+            .social svg {
+                margin-top: 8px;
+                width: 15px;
+                height: 15px;
+            }
+
+            .facebook a:hover {
+                background: #F16D7F;
+            }
+
+            .instagram a:hover {
+                background: #F16D7F;
+            }
+
+            .pinterest a:hover {
+                background: #F16D7F;
+            }
+
+            .twitter a:hover {
+                background: #F16D7F;
+            }
+        }
+    }
+}

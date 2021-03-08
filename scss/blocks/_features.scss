@@ -1,0 +1,47 @@
+.feature {
+    height: 341px;
+    background: $black;
+
+    .feature__wrp {
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding-top: 103px;
+
+        .feature__item {
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            align-items: center;
+            text-align: center;
+
+            .feature__delivery-pic {
+                fill: $salmon;
+                margin-bottom: 28.7px;
+            }
+            .feature__sales-pic {
+                fill: #F16D7F;
+                margin-bottom: 19.7px;
+            }
+            
+            .feature__quality-pic {
+                fill: #F16D7F;
+                margin-bottom: 25.7px;
+            }
+            .feature__item-title {
+                font-family: $font;
+                font-size: 19.96px;
+                font-weight: 400;
+                color: $ligthgray;
+            }
+            .feature__item-description {
+                font-family: $font;
+                font-size: 13.972px;
+                font-weight: 300;
+                color: $ligthgray;
+                margin-top: 16px;
+            }
+        }
+    }
+}

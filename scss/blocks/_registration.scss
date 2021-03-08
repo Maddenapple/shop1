@@ -1,0 +1,118 @@
+.wrapper {
+    width: 1140px;
+    height: 675px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.registration {
+    width: 570px;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+
+.regisration__form-title {
+    font-family: $font;
+    color: $black;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 0 20.5px 0;
+    margin: 0 0 20.5px 0;
+}
+
+.regisration__form-input {
+    width: 360px;
+    height: 45px;
+    background-color: $white;
+    border: 1px solid $midgray;
+    font-family: $font;
+    color: $darkgray;
+    font-weight: 300;
+    font-size: 13px;
+    padding: 0 0 0 16.5px;
+    margin: 20px 0 0 0;
+
+}
+
+.regisration__form-radiobtnwrp {
+    display: flex;
+    margin: 31.5px 0 33px 0;
+}
+
+.regisration__form-radio {
+    width: 71px;
+    font-family: $font;
+    color: $midgray;
+    font-weight: 300;
+    font-size: 11px;
+    display: flex;
+
+}
+
+.regisration__form-radiobtn {
+    margin: 0 10px 0 0;
+}
+
+.regisration__form-description {
+    width: 360px;
+    font-family: $font;
+    color: $midgray;
+    font-weight: 300;
+    font-size: 13px;
+    margin: 15.5px 0 39px 0;
+
+}
+
+.regisration__form-button {
+    width: 167px;
+    height: 50px;
+    background-color: $salmon;
+    border: 0px;
+    font-family: $font;
+    font-weight: 400;
+    font-size: 14px;
+    color: $white;
+    text-transform: uppercase;
+}
+
+.loyalty {
+    width: 570px;
+    padding: 50px 0 0 0;
+
+    .loyalty__title {
+        font-family: $font;
+        color: $black;
+        font-weight: 300;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .loyalty__txt {
+        font-family: $font;
+        color: $black;
+        font-weight: 300;
+        font-size: 24px;
+        margin: 22px 0 21px 0;
+    }
+
+    .loyalty__ul {
+        font-family: $font;
+        color: $black;
+        font-weight: 300;
+        font-size: 24px;
+        margin: 21px 0 0 0;
+
+        .loyalty__li {
+            font-family: $font;
+            color: $black;
+            font-weight: 300;
+            font-size: 24px;
+            margin: 0 0 16px;
+            list-style-image: url(../img/v.png);
+        }
+    }
+
+
+
+}
