@@ -1,0 +1,19 @@
+@mixin container {
+    width: 1140px;
+    margin: 0 auto;
+}
+@mixin navbar {
+    background-color: #222222;
+    align-items: center;
+    height: 75px;
+    display: grid;
+    grid-template-columns: 44px auto 32px 29px 41px;
+    grid-column-gap: 33px;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 32px 0 32px;
+}
+@mixin svgbutton {
+    background-color: transparent;
+    border: 0px;
+}

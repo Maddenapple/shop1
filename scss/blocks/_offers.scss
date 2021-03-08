@@ -1,0 +1,121 @@
+.offers {
+    @include container;
+
+    .offer-cntr {
+        max-width: 1140px;
+        display: flex;
+        justify-content: space-between;
+
+        .offer-top {
+            height: 260px;
+            width: 360px;
+            background-image: url(../img/offer_1.jpg);
+            display: block;
+            position: relative;
+        }
+
+        .offer-top1 {
+            height: 260px;
+            width: 360px;
+            background-image: url(../img/offer_2.jpg);
+            display: block;
+            position: relative;
+        }
+
+        .offer-top2 {
+            height: 260px;
+            width: 360px;
+            background-image: url(../img/offer_3.jpg);
+            display: block;
+            position: relative;
+        }
+
+        .offer-top-overlay {
+            width: 100%;
+            height: 100%;
+            background: rgba(35, 23, 23, 0.7);
+        }
+
+        .offer__dsc {
+            font-family: $font;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .offer__subdsc {
+            font-family: $font;
+            font-size: 24px;
+            font-weight: 700;
+            color: #F16D7F;
+            text-transform: uppercase;
+            ;
+        }
+
+        .offer__wrp {
+            height: 260px;
+            width: 360px;
+            position: relative;
+            margin: 65px 0 0 0;
+        }
+
+        .offer-txt-wrp {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .offer-bottom {
+        height: 180px;
+        width: 1140px;
+        position: relative;
+        margin: 30px 0 0 0;
+
+        .offer-b {
+            height: 180px;
+            width: 1140px;
+            background-image: url(../img/offer_4.jpg);
+            display: block;
+            position: relative;
+        }
+
+        .offer-top-overlay {
+            width: 100%;
+            height: 100%;
+            background: rgba(35, 23, 23, 0.7);
+        }
+
+        .offer-txt-wrpb {
+            position: absolute;
+            top: 40%;
+            left: 41.5%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .offer__dsc {
+            font-family: $font;
+            font-size: 16px;
+            font-weight: 400;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .offer__subdsc {
+            font-family: $font;
+            font-size: 24px;
+            font-weight: 700;
+            color: #F16D7F;
+            text-transform: uppercase;
+            ;
+        }
+
+    }
+
+}
