@@ -237,56 +237,73 @@ header {
   background-color: #F8F8F8;
   text-decoration: none;
   margin: 0 0 30px 0;
-}
-.items .card .card__photo-overlay {
   position: relative;
 }
-.items .card .card__photo-overlay .card-photo {
+.items .card .card:hover .card__photo-overlay::before {
+  content: '';
+  width: 360px;
+  min-height: 420px;
+  background: rgba(58, 56, 56, 0.86);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.items .card .card:hover .card__photo-overlay::before .card-photo {
   border-style: none;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   position: absolute;
 }
-.items .card .card__photo-overlay .card__button-buy {
+.items .card .card:hover .card__photo-overlay::before .card__button-buy {
+  font-family: 'Lato';
+  display: none;
   position: absolute;
-  top: 220px;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding-top: 0px;
-  margin-top: 0px;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 140px;
-  height: 43px;
-  background-color: transparent;
+  color: #fff;
   border: 1px solid #fff;
-  opacity: 0;
+  background-color: transparent;
+  padding: 13px 16px 13px 50px;
+  font-size: 14px;
+  font-family: "lato";
+  cursor: pointer;
+  outline: none;
+  width: 138px;
+  height: 43px;
+  border: 1px solid #fff;
+  background-color: transparent;
 }
-.items .card .card__photo-overlay:hover {
-  filter: brightness(35%);
-  opacity: 1;
+.items .card .card:hover .card__photo-overlay::before::before {
+  content: '';
+  width: 27px;
+  height: 25px;
+  background-image: url(../img/cart.svg);
+  position: absolute;
+  left: 13px;
+  top: 9px;
+}
+.items .card .card:hover .card__photo-overlay::before:active {
+  border: 1px solid #F16D7F;
 }
 .items .card .card-title {
-  font-family: lato;
+  font-family: "lato";
   font-size: 16px;
   color: #000;
   text-transform: uppercase;
   font-weight: 400;
   margin-left: 18px;
   position: absolute;
-  margin: 440px 0 0 0;
+  margin: 0 0 0 0;
   padding: 0 0 0 18px;
 }
 .items .card .card-description {
-  font-family: lato;
+  font-family: "lato";
   font-size: 14px;
   font-weight: 300;
   color: #5D5D5D;
   margin: 12.65px 0 0 16.46px;
   padding: 0 18px 0 18px;
-  margin: 470px 0 0 0;
+  margin: 20px 0 0 0;
 }
 .items .card .card-item-price {
   font-family: lato;
@@ -294,6 +311,9 @@ header {
   color: #F16D7F;
   margin: 18px 0 0 18.41px;
   position: absolute;
+}
+.items__item:hover .items__button-cart {
+  display: block;
 }
 
 .btns {
@@ -775,7 +795,7 @@ header {
   margin: 57px 0 0 0;
   display: flex;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
 }
 .cart .shipping .total .subtotal__wrp {
   width: 118px;
@@ -786,7 +806,7 @@ header {
   font-weight: 400;
   font-size: 11px;
   text-transform: uppercase;
-  margin: 39px 34px 0 0;
+  margin: 39px 44px 0 0;
 }
 .cart .shipping .total .subtotal__wrp .subtotal__prise {
   font-family: "lato";
@@ -804,7 +824,7 @@ header {
   font-weight: 300;
   font-size: 16px;
   text-transform: uppercase;
-  margin: 12px 32px 0 0;
+  margin: 12px 42px 0 0;
 }
 .cart .shipping .total .grandtotal__wrp .grandtotal__price {
   font-family: "lato";
