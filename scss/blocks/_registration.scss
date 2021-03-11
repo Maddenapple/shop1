@@ -74,6 +74,8 @@
     font-size: 14px;
     color: $white;
     text-transform: uppercase;
+    transition: all 500ms ease;
+    @include towhite;
 }
 
 .loyalty {
