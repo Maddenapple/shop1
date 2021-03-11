@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Cart</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page__body">
+
+<body>
     <header>
         <div class="contaianer">
             <div class="nav">
@@ -39,7 +40,7 @@
                             fill="#E8E8E8" />
                     </svg>
                 </button>
-                <button onclick="document.location='cart.html'" class="cart-btn">
+                <button class="cart-btn">
                     <svg width="42" height="37" viewBox="0 0 42 37" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M26.2009 37C25.5532 36.9738 24.9415 36.6948 24.4972 36.2227C24.0529 35.7506 23.8114 35.1232 23.8245 34.475C23.8376 33.8269 24.1043 33.2097 24.5673 32.7559C25.0303 32.3022 25.6527 32.048 26.301 32.048C26.9493 32.048 27.5717 32.3022 28.0347 32.7559C28.4977 33.2097 28.7644 33.8269 28.7775 34.475C28.7906 35.1232 28.549 35.7506 28.1047 36.2227C27.6604 36.6948 27.0488 36.9738 26.401 37H26.2009ZM6.75293 34.32C6.75293 33.79 6.91011 33.2718 7.20459 32.8311C7.49907 32.3904 7.91764 32.0469 8.40735 31.844C8.89705 31.6412 9.43594 31.5881 9.95581 31.6915C10.4757 31.7949 10.9532 32.0502 11.328 32.425C11.7028 32.7998 11.9581 33.2773 12.0615 33.7972C12.1649 34.317 12.1118 34.8559 11.9089 35.3456C11.7061 35.8353 11.3626 36.2539 10.9219 36.5483C10.4812 36.8428 9.96304 37 9.43298 37C9.08087 37.0003 8.73212 36.9311 8.40674 36.7966C8.08136 36.662 7.78569 36.4646 7.53662 36.2158C7.28755 35.9669 7.09001 35.6713 6.9552 35.3461C6.82039 35.0208 6.75098 34.6721 6.75098 34.32H6.75293ZM10.553 28.686C10.2935 28.6868 10.0409 28.6024 9.83411 28.4457C9.62727 28.2891 9.47758 28.0689 9.40796 27.819L4.57495 10.364H1.18201C0.868521 10.364 0.567859 10.2395 0.346191 10.0178C0.124523 9.79614 0 9.49549 0 9.18201C0 8.86852 0.124523 8.56787 0.346191 8.3462C0.567859 8.12454 0.868521 8.00001 1.18201 8.00001H5.46301C5.7225 7.99919 5.97504 8.08372 6.18176 8.24057C6.38848 8.39742 6.53784 8.61788 6.60693 8.86801L11.4399 26.323H24.6179L29.001 16.275H14.401C14.2428 16.2796 14.0854 16.2524 13.9379 16.1951C13.7904 16.1377 13.6559 16.0513 13.5424 15.9411C13.4288 15.8308 13.3386 15.6989 13.277 15.5532C13.2154 15.4074 13.1836 15.2508 13.1836 15.0925C13.1836 14.9343 13.2154 14.7776 13.277 14.6319C13.3386 14.4861 13.4288 14.3542 13.5424 14.2439C13.6559 14.1337 13.7904 14.0473 13.9379 13.9899C14.0854 13.9326 14.2428 13.9054 14.401 13.91H30.814C31.0097 13.91 31.2022 13.9587 31.3744 14.0517C31.5465 14.1448 31.6928 14.2793 31.7999 14.443C31.9078 14.6073 31.9734 14.7957 31.9908 14.9914C32.0083 15.1872 31.9771 15.3842 31.9 15.565L26.495 27.977C26.4026 28.1876 26.251 28.3668 26.0585 28.4927C25.866 28.6186 25.641 28.6858 25.411 28.686H10.553Z"
@@ -56,70 +57,118 @@
             </div>
             <div class="breadcrumb">
                 <div class="breadcrumb__wrapper">
-                    <span class="breadcrumb__title">registration</span>
+                    <span class="breadcrumb__title">shopping cart</span>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="wrapper">
-            <div class="registration">
-                <form class="regisration__form" action="/signup" method="POST">
-                    <p>
-                        <label class="regisration__form-title">Your name</label>
-
-                    </p>
-                    <p>
-                        <input class="regisration__form-input" type="text" name="first_name" placeholder="First name">
-                    </p>
-                    <p>
-                        <input class="regisration__form-input" type="text" name="last_name" placeholder="Last name">
-                    </p>
-                    <div class="regisration__form-radiobtnwrp">
-                        <label class="regisration__form-radio">
-                            <input class="regisration__form-radiobtn" type="radio" name="title" value="mr">
-                            Male
-                        </label>
-                        <label class="regisration__form-radio">
-                            <input class="regisration__form-radiobtn" type="radio" name="title" value="mrs">
-                            Female
-                        </label>
+        <div class="container">
+            <div class="cart">
+                <div class="item__wrapper">
+                    <div class="item">
+                        <div class="item__photo">
+                            <img src="img/c_3.jpg" width="262px" alt="item1">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__description-wrapper">
+                                <div class="item__description-titlewrp">
+                                    <span class="item__description-toptitle">mango peple</span>
+                                    <span class="item__description-subtitle">t-shirt</span>
+                                </div>
+                                <button class="item__description-closebtn" type="reset" title="close">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="item__description-list">Price: <span
+                                        class="item__description-list-price">$300</span></li>
+                                <li class="item__description-list">Color: <span
+                                        class="item__description-list-color">red</span></li>
+                                <li class="item__description-list">Size: <span
+                                        class="item__description-list-size">XI</span>
+                                </li>
+                                <li class="item__description-list">Quantity: <span
+                                        class="item__description-quantity">2</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <p>
-                        <label class="regisration__form-title">Login details</label>
+                    <div class="item">
+                        <div class="item__photo">
+                            <img src="img/c_7.jpg" width="262px" alt="item1">
+                        </div>
+                        <div class="item__description">
+                            <div class="item__description-wrapper">
+                                <div class="item__description-titlewrp">
+                                    <span class="item__description-toptitle">mango peple</span>
+                                    <span class="item__description-subtitle">t-shirt</span>
+                                </div>
+                                <button class="item__description-closebtn" type="reset" title="close">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M11.2453 9L17.5302 2.71516C17.8285 2.41741 17.9962 2.01336 17.9966 1.59191C17.997 1.17045 17.8299 0.76611 17.5322 0.467833C17.2344 0.169555 16.8304 0.00177586 16.4089 0.00140366C15.9875 0.00103146 15.5831 0.168097 15.2848 0.465848L9 6.75069L2.71516 0.465848C2.41688 0.167571 2.01233 0 1.5905 0C1.16868 0 0.764125 0.167571 0.465848 0.465848C0.167571 0.764125 0 1.16868 0 1.5905C0 2.01233 0.167571 2.41688 0.465848 2.71516L6.75069 9L0.465848 15.2848C0.167571 15.5831 0 15.9877 0 16.4095C0 16.8313 0.167571 17.2359 0.465848 17.5342C0.764125 17.8324 1.16868 18 1.5905 18C2.01233 18 2.41688 17.8324 2.71516 17.5342L9 11.2493L15.2848 17.5342C15.5831 17.8324 15.9877 18 16.4095 18C16.8313 18 17.2359 17.8324 17.5342 17.5342C17.8324 17.2359 18 16.8313 18 16.4095C18 15.9877 17.8324 15.5831 17.5342 15.2848L11.2453 9Z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <ul>
+                                <li class="item__description-list">Price: <span
+                                        class="item__description-list-price">$300</span></li>
+                                <li class="item__description-list">Color: <span
+                                        class="item__description-list-color">red</span></li>
+                                <li class="item__description-list">Size: <span
+                                        class="item__description-list-size">XI</span>
+                                </li>
+                                <li class="item__description-list">Quantity: <span
+                                        class="item__description-quantity">2</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="cart__button-wrapper">
+                        <button class="cart__button" type="reset">clear shopping cart</button>
+                        <button class="cart__button" type="button">continue shopping</button>
+                    </div>
+                </div>
+                <div class="shipping">
+                    <form class="shipping__form" action="/signup" method="POST">
+                        <p>
+                            <label class="shipping__form-title">SHIPPING ADRESS</label>
+                        </p>
+                        <p>
+                            <input class="shipping__form-input" type="text" name="first_name" placeholder="Bangladesh">
+                        </p>
+                        <p>
+                            <input class="shipping__form-input" type="text" name="last_name" placeholder="State">
+                        </p>
+                        <p>
+                            <input class="shipping__form-input" type="text" name="last_name"
+                                placeholder="Postcode / Zip">
+                        </p>
+                        <p>
+                            <input class="shipping__form-inputquote" type="text" name="last_name"
+                                placeholder="GET A QUOTE">
+                        </p>
+                    </form>
+                    <div class="total">
+                        <div class="subtotal__wrp">
+                            <span class="subtotal">sub total</span>
+                            <span class="subtotal__prise"> $900</span>
+                        </div>
+                        <div class="grandtotal__wrp">
+                            <span class="grandtotal">grand total</span>
+                            <span class="grandtotal__price">$900</span>
+                        </div>
+                        <div class="total__line"></div>
+                        <button class="total__button">proceed to checkout</button>
+                    </div>
+                </div>
 
-                    </p>
-                    <p>
-                        <input class="regisration__form-input" type="email" name="email" placeholder="Email">
-                    </p>
-                    <p>
-                        <input class="regisration__form-input" type="password" name="password" placeholder="Password">
-                    </p>
-                    <p class="regisration__form-description">
-                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase
-                        letters
-                    </p>
-                    <p>
-                        <button class="regisration__form-button">
-                            join now &nbsp&nbsp&nbsp&nbsp→
-                        </button>
-                    </p>
-                </form>
             </div>
-            
-            <div class="loyalty">
-                <span class="loyalty__title">LOYALTY HAS ITS PERKS</span>
-                <p class="loyalty__txt">Get in on the loyalty program where you can earn points and unlock serious
-                    perks. Starting with these as
-                    soon as you join:</p>
-                <ul class="loyalty__ul">
-                    <li class="loyalty__li">15% off welcome offer</li>
-                    <li class="loyalty__li">Free shipping, returns and exchanges on all orders</li>
-                    <li class="loyalty__li">$10 off a purchase on your birthday</li>
-                    <li class="loyalty__li">Early access to products</li>
-                    <li class="loyalty__li">Exclusive offers & rewards</li>
-                </ul>
-            </div>
+
         </div>
     </main>
     <footer>

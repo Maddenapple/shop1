@@ -2,6 +2,7 @@
     width: 1140px;
     margin: 0 auto;
 }
+
 @mixin navbar {
     background-color: #222222;
     align-items: center;
@@ -13,7 +14,25 @@
     margin: 0 auto;
     padding: 0 32px 0 32px;
 }
+
 @mixin svgbutton {
     background-color: transparent;
     border: 0px;
+}
+
+@mixin tosalmon {
+    &:hover {
+        color: $white;
+        background-color: $salmon;
+        cursor: pointer;
+        border: 0px;
+    }
+}
+
+@mixin towhite {
+    &:hover {
+        color: $salmon;
+        background-color: $white;
+        cursor: pointer;
+    }
 }
