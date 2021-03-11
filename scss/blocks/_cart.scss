@@ -178,7 +178,7 @@
             margin: 57px 0 0 0;
             display: flex;
             flex-direction: column;
-            align-items: end;
+            align-items: flex-end;
 
             .subtotal__wrp {
                 width: 118px;
@@ -189,7 +189,7 @@
                 font-weight: 400;
                 font-size: 11px;
                 text-transform: uppercase;
-                margin: 39px 34px 0 0;
+                margin: 39px 44px 0 0;
 
                 .subtotal__prise {
                     font-family: $font;
@@ -209,7 +209,7 @@
                 font-weight: 300;
                 font-size: 16px;
                 text-transform: uppercase;
-                margin: 12px 32px 0 0;
+                margin: 12px 42px 0 0;
 
                 .grandtotal__price {
                     font-family: $font;
