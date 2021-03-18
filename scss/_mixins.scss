@@ -36,3 +36,41 @@
         cursor: pointer;
     }
 }
+
+@mixin text ($font, $size, $weigth, $color){
+    font-family: $font;
+    font-size: $size;
+    font-weight: $weigth;
+    color: $color;
+}
+
+@mixin desktop {
+    @media (max-width: $desktop-w) {
+        @content;
+    }
+}
+
+@mixin width-1024 {
+    @media (max-width: $width-1024) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: $tablet-w) {
+        @content;
+    }
+}
+
+@mixin width-480 {
+    @media (max-width: $width-480) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile-w) {
+        @content;
+    }
+}
+

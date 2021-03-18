@@ -2,6 +2,10 @@
     height: 79px;
     background: $black;
 
+    @include mobile {
+        height: 143px;
+    }
+
     .footer__bottom-container {
         width: 1140px;
         margin: 0 auto;
@@ -10,12 +14,25 @@
         align-items: center;
         padding: 24px 0 0 0;
 
+        @include mobile {
+            width: 100%;
+            flex-direction: column-reverse;
+        }
+        @include tablet {
+            width: 90%;
+            
+        }
+
         .footer__bottom-txt {
             margin-top: 0px;
             margin-bottom: 0px;
             font-family: $font;
             font-size: 16px;
             color: $ligthgray;
+
+            @include mobile {
+                margin-top: 40px;
+            }
         }
 
         .social_bottom {

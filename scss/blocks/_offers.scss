@@ -1,33 +1,109 @@
 .offers {
     @include container;
 
+    @include mobile {
+        padding: 0 16px 0 16px;
+        width: 100%;
+    }
+
+    @include tablet {
+        max-width: 96%;
+        padding: 0 16px 0 16px;
+    }
+
     .offer-cntr {
         max-width: 1140px;
         display: flex;
         justify-content: space-between;
 
-        .offer-top {
-            height: 260px;
-            width: 360px;
-            background-image: url(../img/offer_1.jpg);
-            display: block;
-            position: relative;
+        @include mobile {
+            flex-direction: column;
+            max-width: 375px;
         }
 
-        .offer-top1 {
-            height: 260px;
-            width: 360px;
-            background-image: url(../img/offer_2.jpg);
-            display: block;
-            position: relative;
+        @include tablet {
+            max-width: 100%;
         }
 
-        .offer-top2 {
-            height: 260px;
-            width: 360px;
-            background-image: url(../img/offer_3.jpg);
-            display: block;
-            position: relative;
+        .offer__wrp {
+            @include mobile {
+                height: auto;
+                max-width: 100%;
+                margin: 0 0 32px 0;
+            }
+
+            @include tablet {
+                max-width: 232px;
+            }
+
+            .offer-top {
+                height: 260px;
+                width: 360px;
+                background-image: url(../img/offer_1.jpg);
+                display: block;
+                position: relative;
+
+                @include tablet {
+                    height: 167px;
+                    width: 232px;
+                    background-size: contain;
+                }
+
+                @include mobile {
+                    height: 247px;
+                    width: 343px;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+
+            }
+
+            .offer-top1 {
+                height: 260px;
+                width: 360px;
+                background-image: url(../img/offer_2.jpg);
+                display: block;
+                position: relative;
+
+                @include tablet {
+                    height: 167px;
+                    width: 232px;
+                    background-size: contain;
+                }
+
+                @include mobile {
+                    height: 247px;
+                    width: 343px;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+
+            }
+
+            .offer-top2 {
+                height: 260px;
+                width: 360px;
+                background-image: url(../img/offer_3.jpg);
+                display: block;
+                position: relative;
+
+                @include tablet {
+                    height: 167px;
+                    width: 232px;
+                    background-size: contain;
+                }
+
+                @include mobile {
+                    height: 247px;
+                    width: 343px;
+                    background-position: center;
+                    background-size: cover;
+                }
+
+
+            }
         }
 
         .offer-top-overlay {
@@ -54,10 +130,9 @@
         }
 
         .offer__wrp {
-            height: 260px;
-            width: 360px;
+            height: auto;
+            max-width: 343px;
             position: relative;
-            margin: 65px 0 0 0;
         }
 
         .offer-txt-wrp {
@@ -67,6 +142,54 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+
+
+
+            @include tablet {
+                top: 35%;
+                left: 19%;
+            }
+
+            @include mobile {
+                top: 40%;
+                left: 25%;
+            }
+        }
+
+        .offer-txt-wrp1 {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include tablet {
+                top: 35%;
+                left: 28%;
+            }
+            @include mobile {
+                top: 40%;
+                left: 35%;
+            }
+        }
+
+        .offer-txt-wrp2 {
+            position: absolute;
+            top: 40%;
+            left: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include tablet {
+                top: 35%;
+                left: 25%;
+            }
+            @include mobile {
+                top: 40%;
+                left: 33%;
+            }
         }
     }
 
@@ -76,27 +199,68 @@
         position: relative;
         margin: 30px 0 0 0;
 
-        .offer-b {
-            height: 180px;
-            width: 1140px;
-            background-image: url(../img/offer_4.jpg);
-            display: block;
-            position: relative;
-        }
-
-        .offer-top-overlay {
-            width: 100%;
+        @include tablet {
             height: 100%;
-            background: rgba(35, 23, 23, 0.7);
+            width: 100%;
+            margin: 19px 0 0 0;
         }
 
-        .offer-txt-wrpb {
-            position: absolute;
-            top: 40%;
-            left: 41.5%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        @include mobile {
+            height: auto;
+            max-width: 343px;
+            margin: 0 0 0 0;
+        }
+
+
+
+        .offer__wrpb {
+            .offer-b {
+                height: 180px;
+                width: 1140px;
+                background-image: url(../img/offer_4.jpg);
+                display: block;
+                position: relative;
+
+                @include tablet {
+                    height: 116px;
+                    width: 100%;
+                    background-size: cover;
+                }
+
+                @include mobile {
+                    height: 111px;
+                    width: 100%;
+                }
+
+
+            }
+
+            .offer-top-overlay {
+                width: 100%;
+                height: 100%;
+                background: rgba(35, 23, 23, 0.7);
+            }
+
+            .offer-txt-wrpb {
+                position: absolute;
+                top: 40%;
+                left: 41.5%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @include tablet {
+                    top: 30%;
+                    left: 39.5%;
+                }
+
+                @include mobile {
+                    top: 33%;
+                    left: 28%;
+                }
+
+
+            }
         }
 
         .offer__dsc {
