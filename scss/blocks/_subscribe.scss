@@ -8,6 +8,19 @@
     display: flex;
     justify-content: center;
 
+    @include mobile {
+        height: 550px;
+        background-size: cover;
+        background-position-x: 28%;
+        margin: 0 auto;
+    }
+    @include tablet {
+        height: 550px;
+        background-size: cover;
+        background-position-x: 28%;
+        margin: 0 auto;
+    }
+
     .subscribe__overlay {
         background: rgba(244, 244, 244, 0.7);
         position: absolute;
@@ -22,16 +35,33 @@
         justify-content: space-between;
         position: absolute;
 
+        @include mobile {
+            width: 100%;
+            flex-direction: column;
+        }
+        @include tablet {
+            width: 100%;
+            flex-direction: column;
+        }
+
         .subscribe__info {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 90px 0 0 0;
 
+            @include tablet {
+                margin: 64px 0 0 0;
+            }
+
             .subscribe__avatar {
                 background-image: url(../img/Intersect.png);
                 width: 96px;
                 height: 96px;
+                margin: 0 0 19px 0;
+                @include tablet {
+                    margin: 0 0 30px 0;
+                }
             }
 
             .subscribe__info-txt {
@@ -40,6 +70,13 @@
                 font-size: 20px;
                 font-weight: 400;
                 color: $black;
+
+                @include mobile {
+                    font-size: 18px;
+                }
+                @include tablet {
+                    font-size: 24px;
+                }
             }
         }
 
@@ -49,12 +86,28 @@
             width: 557px;
             margin: 150px 0 0 0;
 
+            @include mobile {
+                width: 90%;
+                margin: 59px 0 0 0;
+            }
+            @include tablet {
+                width: 100%;
+                margin: 59px 0 0 0;
+            }
+
             .subscribe__form-title {
                 font-family: $font;
                 font-size: 20px;
                 font-weight: 700;
                 text-transform: uppercase;
                 color: $black;
+
+                @include mobile {
+                    font-size: 24px;
+                }
+                @include tablet {
+                    font-size: 24px;
+                }
             }
 
             .subscribe__form-subtitle {
@@ -63,10 +116,25 @@
                 font-weight: 400;
                 color: $black;
                 text-transform: uppercase;
+
+                @include mobile {
+                    font-size: 14px;
+                }
+                @include tablet {
+                    font-size: 18px;
+                }
             }
 
             .subscribe__form-in {
                 .subscribe__form-wrp {
+                    @include mobile {
+                        margin: 0 auto;
+                    }
+                    @include tablet {
+                        width: 400px;
+                        margin: 0 auto;
+                    }
+
                     .subscribe__form-email {
                         width: 256px;
                         height: 49px;
@@ -80,6 +148,14 @@
                         color: #222224;
                         padding-left: 22px;
                         outline: none;
+
+                        @include mobile {
+                            width: 60%;
+                        }
+                        @include tablet {
+                            width: 60%;
+                            margin: 0 auto;
+                        }
                     }
 
                     .subscribe__form-btm {
@@ -94,6 +170,13 @@
                         font-weight: 400;
                         color: #fff;
                         margin-left: -5px;
+
+                        @include mobile {
+                            max-width: 95px;
+                        }
+                        @include tablet {
+                            max-width: 95px;
+                        }
                     }
                 }
             }

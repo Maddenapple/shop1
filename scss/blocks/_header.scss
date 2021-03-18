@@ -8,27 +8,48 @@ header {
 
 .nav {
     @include navbar;
+
+    @include mobile {
+        grid-template-columns: 44px auto 32px;
+        grid-column-gap: 41px;
+    }
+
+    .page-header-logo {
+        @include svgbutton;
+    }
+
+    .menu-btn {
+        @include svgbutton;
+
+    }
+
+    .account-btn {
+        @include svgbutton;
+
+        @include mobile {
+            display: none
+        }
+    }
+
+    .cart-btn {
+        @include svgbutton;
+
+        @include mobile {
+            display: none;
+        }
+
+    }
 }
 
-.page-header-logo {
-    @include svgbutton;
-}
 
-.menu-btn {
-    @include svgbutton;
-}
-
-.account-btn {
-    @include svgbutton;
-}
-
-.cart-btn {
-    @include svgbutton;
-}
 
 .breadcrumb {
     height: 75px;
     background-color: $lightsalmon;
+
+    @include tablet {
+        padding: 0 16px;
+    }
 
     .breadcrumb__wrapper {
         width: 1140px;
@@ -38,11 +59,8 @@ header {
         align-items: center;
 
         .breadcrumb__title {
-            font-family: $font;
+            @include text ($font, $f24, 400, $salmon);
             text-transform: uppercase;
-            color: $salmon;
-            font-weight: 400;
-
         }
     }
 }
