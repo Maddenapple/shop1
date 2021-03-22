@@ -131,7 +131,7 @@
 
         .offer__wrp {
             height: auto;
-            max-width: 343px;
+            max-width: 360px;
             position: relative;
         }
 
@@ -168,6 +168,7 @@
                 top: 35%;
                 left: 28%;
             }
+
             @include mobile {
                 top: 40%;
                 left: 35%;
@@ -186,6 +187,7 @@
                 top: 35%;
                 left: 25%;
             }
+
             @include mobile {
                 top: 40%;
                 left: 33%;

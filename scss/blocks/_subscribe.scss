@@ -8,13 +8,15 @@
     display: flex;
     justify-content: center;
 
-    @include mobile {
+
+    @include tablet {
         height: 550px;
         background-size: cover;
         background-position-x: 28%;
         margin: 0 auto;
     }
-    @include tablet {
+
+    @include mobile {
         height: 550px;
         background-size: cover;
         background-position-x: 28%;
@@ -35,11 +37,13 @@
         justify-content: space-between;
         position: absolute;
 
-        @include mobile {
+
+        @include tablet {
             width: 100%;
             flex-direction: column;
         }
-        @include tablet {
+
+        @include mobile {
             width: 100%;
             flex-direction: column;
         }
@@ -59,6 +63,7 @@
                 width: 96px;
                 height: 96px;
                 margin: 0 0 19px 0;
+
                 @include tablet {
                     margin: 0 0 30px 0;
                 }
@@ -71,11 +76,13 @@
                 font-weight: 400;
                 color: $black;
 
-                @include mobile {
-                    font-size: 18px;
-                }
+
                 @include tablet {
                     font-size: 24px;
+                }
+
+                @include mobile {
+                    font-size: 18px;
                 }
             }
         }
@@ -86,13 +93,17 @@
             width: 557px;
             margin: 150px 0 0 0;
 
-            @include mobile {
-                width: 90%;
-                margin: 59px 0 0 0;
-            }
+
             @include tablet {
                 width: 100%;
                 margin: 59px 0 0 0;
+            }
+
+            @include mobile {
+                width: 90%;
+                margin: 59px 0 0 0;
+                right: 4%;
+                position: relative;
             }
 
             .subscribe__form-title {
@@ -102,10 +113,12 @@
                 text-transform: uppercase;
                 color: $black;
 
-                @include mobile {
+
+                @include tablet {
                     font-size: 24px;
                 }
-                @include tablet {
+
+                @include mobile {
                     font-size: 24px;
                 }
             }
@@ -117,21 +130,24 @@
                 color: $black;
                 text-transform: uppercase;
 
-                @include mobile {
-                    font-size: 14px;
-                }
+
                 @include tablet {
                     font-size: 18px;
+                }
+
+                @include mobile {
+                    font-size: 14px;
                 }
             }
 
             .subscribe__form-in {
                 .subscribe__form-wrp {
-                    @include mobile {
-                        margin: 0 auto;
-                    }
                     @include tablet {
                         width: 400px;
+                        margin: 0 auto;
+                    }
+
+                    @include mobile {
                         margin: 0 auto;
                     }
 
@@ -149,12 +165,13 @@
                         padding-left: 22px;
                         outline: none;
 
-                        @include mobile {
-                            width: 60%;
-                        }
                         @include tablet {
                             width: 60%;
                             margin: 0 auto;
+                        }
+
+                        @include mobile {
+                            width: 50%;
                         }
                     }
 
@@ -171,10 +188,11 @@
                         color: #fff;
                         margin-left: -5px;
 
-                        @include mobile {
+                        @include tablet {
                             max-width: 95px;
                         }
-                        @include tablet {
+
+                        @include mobile {
                             max-width: 95px;
                         }
                     }

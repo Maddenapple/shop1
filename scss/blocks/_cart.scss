@@ -1,17 +1,37 @@
+.container {
+    @include tablet {
+        max-width: 743px;
+    }
+}
+
 .cart {
     margin: 96px 0 0 0;
     display: flex;
 
+    @include tablet {
+        margin-top: 59px;
+        flex-direction: column;
+
+    }
+
     .item__wrapper {
-        width: 652px;
+        max-width: 652px;
+
+        @include tablet {
+            max-width: 743px;
+        }
 
         .item {
-            width: 652px;
+            max-width: 652px;
             height: 306px;
             background-color: $white;
             filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
             display: flex;
             margin: 0 0 40px 0;
+
+            @include tablet {
+                max-width: 743px;
+            }
 
             .item__description {
                 width: 390px;
@@ -102,6 +122,11 @@
             display: flex;
             justify-content: space-between;
 
+            @include tablet {
+                max-width: 508px;
+                margin: 0 auto;
+            }
+
             .cart__button {
                 font-family: $font;
                 color: $black;
@@ -117,6 +142,11 @@
                 margin: 32.5px 0 128.5px 0;
                 transition: all 500ms ease;
 
+                @include tablet {
+                    margin: 20px 0 34px 0;
+                    width: 234px;
+                }
+
                 &:hover {
                     color: $white;
                     background-color: $salmon;
@@ -129,6 +159,13 @@
 
     .shipping {
         margin: 0 0 0 128px;
+
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 147px;
+            margin: 0 0 128px 0;
+        }
 
         .shipping__form {
             .shipping__form-title {
@@ -179,6 +216,10 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+
+            @include tablet {
+                margin-top: 40px;
+            }
 
             .subtotal__wrp {
                 width: 118px;
