@@ -22,7 +22,7 @@
         }
 
         @include tablet {
-            max-width: 100%;
+            max-width: 736px;
         }
 
         .offer__wrp {
@@ -197,13 +197,13 @@
 
     .offer-bottom {
         height: 180px;
-        width: 1140px;
+        max-width: 1140px;
         position: relative;
         margin: 30px 0 0 0;
 
         @include tablet {
             height: 100%;
-            width: 100%;
+            max-width: 736px;
             margin: 19px 0 0 0;
         }
 
