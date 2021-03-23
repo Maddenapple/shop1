@@ -18,6 +18,7 @@
 @mixin svgbutton {
     background-color: transparent;
     border: 0px;
+    fill: $white;
 }
 
 @mixin tosalmon {
